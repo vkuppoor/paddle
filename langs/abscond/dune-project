@@ -5,11 +5,11 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github vkuppoor/paddle))
 
-(authors "Author Name")
+(authors "Venkat Kuppoor")
 
-(maintainers "Maintainer Name")
+(maintainers "Venkat Kuppoor")
 
 (license LICENSE)
 
@@ -17,8 +17,8 @@
 
 (package
  (name abscond)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "Abscond: a language of numbers")
+ (description "First iteration of LLVM Racket compiler.")
  (depends ocaml dune)
  (tags
   (topics "to describe" your project)))

@@ -11,7 +11,7 @@
 
 (maintainers "Venkat Kuppoor")
 
-(license LICENSE)
+(license MIT)
 
 (documentation https://url/to/documentation)
 
@@ -19,7 +19,7 @@
  (name abscond)
  (synopsis "Abscond: a language of numbers")
  (description "First iteration of LLVM Racket compiler.")
- (depends ocaml dune)
+ (depends ocaml dune parsexp)
  (tags
   (topics "to describe" your project)))
 

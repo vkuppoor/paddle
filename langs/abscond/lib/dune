@@ -1,2 +1,3 @@
 (library
- (name abscond))
+ (name lang)
+ (libraries parsexp))

@@ -1,0 +1,26 @@
+(lang dune 3.6)
+
+(name abscond)
+
+(generate_opam_files true)
+
+(source
+ (github vkuppoor/paddle))
+
+(authors "Venkat Kuppoor")
+
+(maintainers "Venkat Kuppoor")
+
+(license MIT)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name abscond)
+ (synopsis "Abscond: a language of numbers")
+ (description "First iteration of LLVM Racket compiler.")
+ (depends ocaml dune parsexp)
+ (tags
+  (topics "to describe" your project)))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

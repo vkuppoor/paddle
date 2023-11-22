@@ -1,0 +1,11 @@
+(executable
+ (public_name abscond)
+ (name main)
+ (libraries lang)
+ (modules Main))
+
+(executable
+ (public_name abscond_compile_filein)
+ (name compile_filein)
+ (libraries lang)
+ (modules Compile_filein))

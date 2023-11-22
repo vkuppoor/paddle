@@ -3,9 +3,6 @@ CC = clang
 # Define the object files of the C runtime system
 objs = main.o print.o
 
-# Define the default target
-.DEFAULT_GOAL := all
-
 # Rule that links all of the runtime object files listed in objs into one file
 runtime.o: $(objs)
 	ld -r $(objs) -o runtime.o
@@ -19,7 +16,9 @@ runtime.o: $(objs)
 	$(CC) -fPIC -c -g -o $@ $<
 
 # Suffix rule for compiling .s files to .o files
-.s.o:
+# .s.o:
+# 	$(CC) -c $< -o $@
+%.o: %.s
 	$(CC) -c $< -o $@
 
 # Rule for compiling .ll files to .o files
@@ -34,4 +33,4 @@ runtime.o: $(objs)
 clean:
 	rm -f *.ll *.o *.s *.run
 
-.PHONY: all clean
+.PHONY: clean

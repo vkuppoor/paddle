@@ -1,1 +1,2 @@
-0
+#lang racket  
+0 ; hello 

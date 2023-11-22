@@ -1,1 +1,2 @@
+#lang regex
 5

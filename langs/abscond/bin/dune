@@ -7,5 +7,5 @@
 (executable
  (public_name abscond_compile_filein)
  (name compile_filein)
- (libraries lang)
+ (libraries lang str)
  (modules Compile_filein))

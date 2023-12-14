@@ -1,6 +1,6 @@
 (lang dune 3.6)
 
-(name abscond)
+(name blackmail)
 
 (generate_opam_files true)
 
@@ -16,9 +16,9 @@
 (documentation https://url/to/documentation)
 
 (package
- (name abscond)
- (synopsis "Abscond: a language of numbers")
- (description "First iteration of LLVM Racket compiler.")
+ (name blackmail)
+ (synopsis "Blackmail: incrementing and decrementing")
+ (description "Second iteration of LLVM Racket compiler.")
  (depends ocaml dune parsexp)
  (tags
   (topics "to describe" your project)))

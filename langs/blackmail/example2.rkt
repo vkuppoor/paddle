@@ -1,0 +1,2 @@
+#lang regex
+5

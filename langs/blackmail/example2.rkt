@@ -1,2 +1,2 @@
 #lang regex
-5
+(add1 (sub1 5))

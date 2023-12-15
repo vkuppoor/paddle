@@ -5,8 +5,14 @@ open Types
 
 exception CompileError of string
 
-let compile_expr = function
+let rec compile_expr = function
 | Int n -> const_int type_int n  
+| Prim1 (op, e) -> compile_prim1 op e
+
+and compile_prim1 op e = match op with
+| Add1 -> build_add (compile_expr e) (const_int type_int 1) "add1" builder
+| Sub1 -> build_sub (compile_expr e) (const_int type_int 1) "sub1" builder
+
 
 (*let compile e = build_ret (compile_expr e) builder*)
 let compile e =
@@ -16,6 +22,4 @@ let compile e =
   let rv = compile_expr e in
   let _ = (build_ret rv builder) in
   md 
-
-
 

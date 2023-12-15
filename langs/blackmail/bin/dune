@@ -1,0 +1,11 @@
+(executable
+ (public_name blackmail)
+ (name main)
+ (libraries lang)
+ (modules Main))
+
+(executable
+ (public_name blackmail_compile_filein)
+ (name compile_filein)
+ (libraries lang str)
+ (modules Compile_filein))

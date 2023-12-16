@@ -1,6 +1,6 @@
 (lang dune 3.6)
 
-(name con)
+(name con_dupe)
 
 (generate_opam_files true)
 
@@ -16,9 +16,9 @@
 (documentation https://url/to/documentation)
 
 (package
- (name con)
- (synopsis "Con: boolean values and branching with conditionals")
- (description "Third iteration of LLVM Racket compiler.")
+ (name con_dupe)
+ (synopsis "Con & Dupe: branching with conditionals & a duplicity of types")
+ (description "A Racket-subset compiler that targets LLVM IR")
  (depends ocaml dune parsexp)
  (tags
   (topics "to describe" your project)))

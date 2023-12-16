@@ -1,2 +1,2 @@
 #lang racket
-(sub1 (add1 (sub1 (add1 10))))
+(if (if (zero? 0) 0 1) 1 0) ; should eval to 1

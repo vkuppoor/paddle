@@ -1,2 +1,2 @@
-#lang regex
-(add1 (sub1 5))
+#lang racket  
+(if (zero? 5) 1 0) ; evals to 0 

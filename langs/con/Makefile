@@ -1,7 +1,7 @@
 CC = clang
 
 # Define the object files of the C runtime system
-objs = main.o print.o
+objs = main.o print.o values.o
 
 # Rule that links all of the runtime object files listed in objs into one file
 runtime.o: $(objs)
